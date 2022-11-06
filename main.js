@@ -32,10 +32,10 @@ window.onscroll = function(){
 /*lagt till två länk till <button> via (window.location.href)
  så att när användaren klickar på den går han till nästa sida*/ 
 function goNext() {
- window.location.href = "my.project2-p2.html";
+ window.location.href = "page1.html";
 }
 function goNext2(){
- window.location.href = "my.project2-p3.html";
+ window.location.href = "page2.html";
 }
 /* lagt till tre länk till <button> för att
 gå till hans mest kända filmer på YouTube.*/
@@ -49,3 +49,4 @@ function movie2(){
 function movie3(){
  window.location.href = "https://www.youtube.com/watch?v=bufHojkoGtw";
 }
+

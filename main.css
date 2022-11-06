@@ -26,6 +26,9 @@ header .logo{
  text-align: left;
  color: black;
 }
+h1, h2{
+  text-shadow: 2px 2px #00000035;
+}
 header ul{
  display: flex;
  justify-content: center;
@@ -38,10 +41,12 @@ header ul li{
 header ul li a{
  padding: 6px 15px;
  border-radius: 20px;
+ font-weight: bold;
+ text-shadow: 2px 2px #00000035;
 }
 header ul li a:hover{
- background: #fff;
- color: #200016;
+  background: green;
+  color: white;
 }
 .main{
  position: relative;
@@ -71,68 +76,85 @@ header ul li a:hover{
  width:350px;
  height:350px;
  z-index: 0;
- 
-}
-
-#sun {
-    animation: rotate 5s linear infinite;
-    
-  }
-  
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    
-    100% {
-        transform: rotate(360deg);
-        /* opacity:1; */
-    }
-  }
+ animation: rotate 25s linear infinite;
+ -webkit-animation: rotate 25s linear infinite;
+} 
 #clouds{
- z-index: 1;
+  z-index: 1;
 }
 #mountains{
- z-index: 2;
+  z-index: 2;
 }
 #birds{
- width: 100%;
- height: 100%;
- scale: 30%;
- margin-left: 550px;
+  width: 100%;
+  height: 100%;
+  scale: 30%;
+  margin-left: 550px;
 }
 .CheGuevaraImg{
   float: right;
-  margin-bottom: 20px;
+  margin: 50px;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: 1px 1px 5px 10px #00000060;
 }
 .CheGuevaraImg1{
   float: right;
-  margin-bottom: 20px;
+  margin: 20px;
   border-radius: 10%;
   -webkit-border-radius: 10%;
   -moz-border-radius: 10%;
   -ms-border-radius: 10%;
   -o-border-radius: 10%;
+  box-shadow: 1px 1px 5px 10px #00000060;
 }
 .article{
- color: #fff;
- padding: 30px;
+  color: #fff;
+  padding: 30px;
 }
 .article h2{
- margin: 20px;
- font-size: 25px;
+  margin: 20px;
+  font-size: 25px;
 }
 .article p{
- margin: 20px;
+  margin: 20px;
 }
 .article button{
- padding: 15px 15px;
- border-radius: 20px;
- margin-top: 100px;
- margin-left: 10px;
+  padding: 15px 15px;
+  border-radius: 10px;
+  margin-top: 100px;
+  margin-left: 10px;
+  font-weight: bold;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 1px 1px 5px 4px #00000060;
+  text-shadow: 1px 1px 1px #00000035;
 }
 .article button:hover{
- background: green;
- color: white;
+  background: green;
+  color: white;
+}
+.music{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    /* opacity:1; */
+  }
 }
