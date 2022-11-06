@@ -3,7 +3,7 @@
  padding: 0;
 }
 body{
- background: linear-gradient(#08528a,#08528a);
+ background: #08528a;
  height: 100vh;
  font-family: system-ui;
 }
