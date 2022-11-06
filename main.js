@@ -3,22 +3,21 @@ kan göra dem interaktiv och få dem att röra sig med (scroll).*/
 let stars = document.getElementById("clouds");
 let sun = document.getElementById("sun");
 let birds = document.getElementById("birds");
-
 //en event (window.onscroll) för att utföra omrörningsfunktionen.
 window.onscroll = function(){
-  // ställer in en variabel vars värde är (scrollY) property.
+ // ställer in en variabel vars värde är (scrollY) property.
  let value = scrollY;
  //röra elementen (bilderna) genom (.style) när jag flyttade rullningen.
  //ge fart med multiplicerar värdet
- clouds.style.left = value * 1 + "px";//från vänster till höger 
- sun.style.top = value * 2 + "px";
- sun.style.left = value * 6 + "px";// från toppen till botten
+ clouds.style.left = value * 0.5 + "px";
+ sun.style.top = value * 1 + "px";
+ sun.style.left = value * 6 + "px";
  sun.style.rotate = value * 600 + "px";
  birds.style.left = value * 4 + "px";
  //från vänster till höger
  /*if-statement, så att tillståndet är när scrollY>= 127,
   vilket är platsen för månens försvinnande,
-   den kommer att ändras till dagsljus*/
+  den kommer att ändras till dagsljus*/
  if(scrollY>= 127){
   document.querySelector(".main").style.background =
    "linear-gradient(#08528a,#87c6f7)"
