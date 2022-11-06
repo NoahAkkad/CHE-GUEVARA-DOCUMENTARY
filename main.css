@@ -158,3 +158,38 @@ header ul li a:hover{
     /* opacity:1; */
   }
 }
+@media screen and (max-width: 600px){
+  #clouds{
+    scale: 150%;
+  }
+  #sun{
+    margin-left: 10px;
+    width: 200px;
+    height: 200px;
+  }
+  .CheGuevaraImg1{
+    width: 290px;
+  }
+  .CheGuevaraImg{
+    width: 250px;
+  }
+  .article button{
+    margin-top: 20px; 
+  }
+  header{
+    margin: 20px;
+    flex-direction: column;
+  }
+  header ul{
+    margin: 10px;
+  }
+  header ul li a{
+    text-align: center;
+    padding: 0px;
+  }
+  header ul li a:hover{
+    background: none;
+    color: #fff;
+  }
+}
+   
