@@ -3,7 +3,7 @@
  padding: 0;
 }
 body{
- background: linear-gradient(#08528a,#08528a);
+ background:#08528a;
  height: 100vh;
  font-family: system-ui;
 }
@@ -28,10 +28,6 @@ header .logo{
 }
 h1, h2{
   text-shadow: 2px 2px #00000035;
-  color: #87c6f7;
-  color: #59b3f8;
-  color: #38a6fa;
-  color: #08528a;
 }
 header ul{
  display: flex;
@@ -195,4 +191,3 @@ header ul li a:hover{
     color: #fff;
   }
 }
-   
